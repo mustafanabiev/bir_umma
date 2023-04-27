@@ -1,3 +1,4 @@
+import 'package:bir_umma/modules/home/view/namaz_page/namaz_page.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {

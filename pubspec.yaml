@@ -40,8 +40,9 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/
+    # - assets/images/
     - assets/icons/
+    - assets/png/
 
   # fonts:
   #   - family: Schyler
