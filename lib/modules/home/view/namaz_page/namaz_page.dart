@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> {
               Row(
                 children: [
                   Checkbox(
-                    shape: CircleBorder(),
+                    shape: const CircleBorder(),
                     value: isChecked,
                     onChanged: (value) {
                       isChecked = !isChecked;
@@ -96,7 +96,7 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(fontSize: 20),
                 ),
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xfff3473E6),
+                    backgroundColor: const Color(0xfff3473E6),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
                     ),

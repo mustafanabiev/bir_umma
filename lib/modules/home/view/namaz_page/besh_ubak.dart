@@ -22,7 +22,7 @@ class _BeshUbakState extends State<BeshUbak> {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => PageNamaz()),
+              MaterialPageRoute(builder: (context) => const PageNamaz()),
             );
           },
           icon: const Icon(

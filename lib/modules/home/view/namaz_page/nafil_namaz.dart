@@ -19,7 +19,7 @@ class _NafilNamazState extends State<NafilNamaz> {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => PageNamaz()),
+              MaterialPageRoute(builder: (context) => const PageNamaz()),
             );
           },
           icon: const Icon(
@@ -42,7 +42,7 @@ class _NafilNamazState extends State<NafilNamaz> {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
+        children: const [
           Text(
             'Нафил Намаз',
             style: TextStyle(fontSize: 25),
