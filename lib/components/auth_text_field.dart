@@ -27,7 +27,9 @@ class AuthTextField extends StatelessWidget {
                 fontSize: 18),
             icon: icons,
             hoverColor: Colors.white,
-            suffixIcon: suffixIcon),
+            suffixIcon: suffixIcon
+            
+            ),
       ),
     );
   }
