@@ -1,19 +1,20 @@
-import 'package:bir_umma/modules/home/view/namaz_page/page_namaz.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../constants/color.dart';
-import '../../../../gen/assets.gen.dart';
+import '../../../constants/color.dart';
+import '../../../gen/assets.gen.dart';
+// ignore: depend_on_referenced_packages
+import 'package:provider/provider.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
+class NamazPage extends StatelessWidget {
+  NamazPage({
+    Key? key,
+    this.onPressed,
+  }) : super(key: key);
   bool isCheckedRememberMe = false;
   bool isChecked = false;
+  void Function()? onPressed;
+  bool valor = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,7 +47,7 @@ class _HomePageState extends State<HomePage> {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
-            color: Color(0xffE7F1FF),
+            color: const Color(0xffE7F1FF),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -62,20 +63,31 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Assets.png.erkek1.image(),
-                  SizedBox(width: 10),
+                  InkWell(
+                    onTap: () {},
+                    child: Assets.png.erkek1.image(),
+                  ),
+                  const SizedBox(width: 10),
                   Assets.png.ayal1.image(),
                 ],
               ),
               Row(
                 children: [
-                  Checkbox(
-                    shape: const CircleBorder(),
-                    value: isChecked,
-                    onChanged: (value) {
-                      isChecked = !isChecked;
-                      setState(() {});
-                    },
+                  ChangeNotifierProvider(
+                    create: (_) => CheckboxProvider(),
+                    child: Consumer<CheckboxProvider>(
+                      builder: (context, checkboxProvider, _) =>
+                          Transform.scale(
+                        scale: 1.3,
+                        child: Checkbox(
+                          shape: const CircleBorder(),
+                          value: checkboxProvider.isChecked,
+                          onChanged: (value) {
+                            checkboxProvider.isChecked = value ?? true;
+                          },
+                        ),
+                      ),
+                    ),
                   ),
                   const Text(
                     "Эстеп калуу",
@@ -85,28 +97,35 @@ class _HomePageState extends State<HomePage> {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => PageNamaz()),
-                  );
-                },
+                onPressed: onPressed,
                 child: Text(
                   'Баштоо',
                   style: TextStyle(fontSize: 20),
                 ),
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xfff3473E6),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 80.0, vertical: 12.0)),
+                  backgroundColor: const Color(0xfff3473E6),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 80.0, vertical: 12.0),
+                ),
               ),
             ],
           ),
         ),
       ),
     );
+  }
+}
+
+class CheckboxProvider with ChangeNotifier {
+  bool _isChecked = false;
+
+  bool get isChecked => _isChecked;
+
+  set isChecked(bool value) {
+    _isChecked = value;
+    notifyListeners();
   }
 }

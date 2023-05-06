@@ -1,5 +1,3 @@
-import 'package:bir_umma/modules/home/view/namaz_page/ait_namaz.dart';
-import 'package:bir_umma/modules/home/view/namaz_page/namaz_page.dart';
 import 'package:bir_umma/modules/modules.dart';
 import 'package:bir_umma/modules/profile/view/profile_view.dart';
 import 'package:bir_umma/modules/question_answer/question_answer.dart';
@@ -14,7 +12,7 @@ class MainView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MainScreen([
+    return MainScreen([
       HomeView(),
       QuestionAnswerView(),
       QuranView(),
