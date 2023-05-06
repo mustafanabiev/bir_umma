@@ -105,10 +105,10 @@ class NamazPage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xfff3473E6),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15),
+                    borderRadius: BorderRadius.circular(25),
                   ),
                   padding: const EdgeInsets.symmetric(
-                      horizontal: 80.0, vertical: 12.0),
+                      horizontal: 100.0, vertical: 12.0),
                 ),
               ),
             ],
