@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../constants/color.dart';
 import '../../../gen/assets.gen.dart';
+
 // ignore: depend_on_referenced_packages
 import 'package:provider/provider.dart';
 
@@ -60,16 +61,54 @@ class NamazPage extends StatelessWidget {
                     fontSize: 34),
               ),
               const SizedBox(height: 35),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  InkWell(
-                    onTap: () {},
-                    child: Assets.png.erkek1.image(),
+              // SelectGenderWidget(),
+              ChangeNotifierProvider(
+                create: (_) => GenderProvider(),
+                child: Consumer<GenderProvider>(
+                  builder: (context, genderProvider, _) => Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          genderProvider.setGender = true;
+                        },
+                        child: Container(
+                            width: 125,
+                            height: 145,
+                            decoration: genderProvider.getGender
+                                ? BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15),
+                                    border: Border.all(
+                                        color: const Color(0xff3473E6),
+                                        width: 1.3),
+                                  )
+                                : null,
+                            padding: const EdgeInsets.all(12),
+                            child: Assets.png.erkek1.image()),
+                      ),
+                      const SizedBox(width: 10),
+                      InkWell(
+                        onTap: () {
+                          genderProvider.setGender = false;
+                        },
+                        child: Container(
+                          width: 125,
+                          height: 145,
+                          decoration: genderProvider.getGender
+                              ? null
+                              : BoxDecoration(
+                                  borderRadius: BorderRadius.circular(15),
+                                  border: Border.all(
+                                      color: const Color(0xff3473E6),
+                                      width: 1.3),
+                                ),
+                          padding: const EdgeInsets.all(12),
+                          child: Assets.png.ayal1.image(),
+                        ),
+                      ),
+                    ],
                   ),
-                  const SizedBox(width: 10),
-                  Assets.png.ayal1.image(),
-                ],
+                ),
               ),
               Row(
                 children: [
@@ -120,12 +159,23 @@ class NamazPage extends StatelessWidget {
 }
 
 class CheckboxProvider with ChangeNotifier {
-  bool _isChecked = false;
+  bool _isChecked = true;
 
   bool get isChecked => _isChecked;
 
   set isChecked(bool value) {
     _isChecked = value;
+    notifyListeners();
+  }
+}
+
+class GenderProvider with ChangeNotifier {
+  bool _gender = true;
+
+  bool get getGender => _gender;
+
+  set setGender(bool value) {
+    _gender = value;
     notifyListeners();
   }
 }
