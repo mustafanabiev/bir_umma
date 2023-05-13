@@ -7,9 +7,8 @@ import '../../../components/models/namaz_page_model.dart';
 
 
 
-
-class UchNamazPage extends StatelessWidget {
-  const UchNamazPage({
+class BeshUbakNamazPage extends StatelessWidget {
+  const BeshUbakNamazPage({
     Key? key,
     this.onPressed,
     this.onTap,
@@ -38,7 +37,7 @@ class UchNamazPage extends StatelessWidget {
         children: [
           Expanded(
             child: GridView.builder(
-              itemCount: 3,
+              itemCount: 5,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 1,
                 childAspectRatio: MediaQuery.of(context).size.width /
@@ -58,7 +57,7 @@ class UchNamazPage extends StatelessWidget {
                         child: Stack(
                           children: [
                             Image.asset(
-                              'assets/png/${namazml[index].image}.png',
+                              'assets/png/${beshUbakNamaz[index].image}.png',
                               width: double.infinity,
                               height: double.infinity,
                               fit: BoxFit.cover,
@@ -67,7 +66,7 @@ class UchNamazPage extends StatelessWidget {
                             Positioned(
                               // ignore: sort_child_properties_last
                               child: Text(
-                                '| ${namazml[index].title}',
+                                '| ${beshUbakNamaz[index].title}',
                                 style: const TextStyle(
                                   fontSize: 27,
                                   color: Colors.white,

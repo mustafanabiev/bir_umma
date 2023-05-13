@@ -6,12 +6,13 @@ import '../../../gen/assets.gen.dart';
 // ignore: depend_on_referenced_packages
 import 'package:provider/provider.dart';
 
+// ignore: must_be_immutable
 class NamazPage extends StatelessWidget {
   NamazPage({
     Key? key,
     this.onPressed,
   }) : super(key: key);
-  bool isCheckedRememberMe = false;
+
   bool isChecked = false;
   void Function()? onPressed;
   bool valor = true;
@@ -137,10 +138,6 @@ class NamazPage extends StatelessWidget {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: onPressed,
-                child: Text(
-                  'Баштоо',
-                  style: TextStyle(fontSize: 20),
-                ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xfff3473E6),
                   shape: RoundedRectangleBorder(
@@ -148,6 +145,10 @@ class NamazPage extends StatelessWidget {
                   ),
                   padding: const EdgeInsets.symmetric(
                       horizontal: 100.0, vertical: 12.0),
+                ),
+                child: const Text(
+                  'Баштоо',
+                  style: TextStyle(fontSize: 20),
                 ),
               ),
             ],

@@ -9,12 +9,12 @@ class CardNamaz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: fonCard,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10.0),
+        borderRadius: BorderRadius.circular(18),
       ),
-      elevation: 5,
-      margin: EdgeInsets.all(10),
+      elevation: 0,
+      margin: const EdgeInsets.all(5),
+      child: fonCard,
     );
   }
 }
