@@ -1,6 +1,7 @@
 import 'package:bir_umma/modules/home/view/Uch_namaz_page.dart';
 import 'package:bir_umma/modules/home/view/besh_ubak_namaz.dart';
 import 'package:bir_umma/modules/home/view/namaz_page.dart';
+import 'package:bir_umma/modules/home/view/page_info.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -23,7 +24,12 @@ class HomeView extends StatelessWidget {
           ),
           BeshUbakNamazPage(
             onPressed: () => controller.jumpToPage(1),
-          )
+             onTap: () => controller.jumpToPage(3),
+          ),
+          PageInfo(
+             onPressed: () => controller.jumpToPage(1),
+          ),
+
         ],
       ),
     );
