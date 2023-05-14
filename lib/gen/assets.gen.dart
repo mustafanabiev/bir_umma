@@ -69,6 +69,7 @@ class $AssetsPngGen {
 
   /// File path: assets/png/sham.png
   AssetGenImage get sham => const AssetGenImage('assets/png/sham.png');
+   AssetGenImage get video => const AssetGenImage('assets/png/video.png');
 
   /// List of all assets
   List<AssetGenImage> get values => [
@@ -81,7 +82,8 @@ class $AssetsPngGen {
         kuptan,
         nafilNamaz,
         namaz,
-        sham
+        sham,
+        video
       ];
 }
 
