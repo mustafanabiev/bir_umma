@@ -21,6 +21,7 @@ class HomeView extends StatelessWidget {
           UchNamazPage(
             onPressed: () => controller.jumpToPage(0),
             onTap: () => controller.jumpToPage(2),
+            
           ),
           BeshUbakNamazPage(
             onPressed: () => controller.jumpToPage(1),
