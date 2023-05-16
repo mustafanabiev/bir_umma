@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "144716768957",
+    "project_id": "bir-umma-f130d",
+    "storage_bucket": "bir-umma-f130d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144716768957:android:b345694f7e85376d3439d4",
+        "android_client_info": {
+          "package_name": "com.example.bir_umma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144716768957-kcrr6t7hhl9c2sq80a3i8em8jmps2edg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSxY4_CaXQb-QtF6zflhgccpKz_GbYAZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144716768957-kcrr6t7hhl9c2sq80a3i8em8jmps2edg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
