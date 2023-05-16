@@ -41,8 +41,8 @@ class FirstPage extends StatelessWidget {
               itemCount: 12,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
-                mainAxisSpacing: 48,
-                crossAxisSpacing: 12,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 10,
               ),
               itemBuilder: (context, index) {
                 return Card(

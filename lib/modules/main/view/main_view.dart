@@ -14,10 +14,10 @@ class MainView extends StatelessWidget {
   Widget build(BuildContext context) {
     return MainScreen([
       HomeView(),
-      QuestionAnswerView(),
-      QuranView(),
-      ZikirView(),
-      ProfileView(),
+      const QuestionAnswerView(),
+      const QuranView(),
+      const ZikirView(),
+      const ProfileView(),
     ]);
   }
 }
