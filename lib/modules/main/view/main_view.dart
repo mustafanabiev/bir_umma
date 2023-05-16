@@ -12,7 +12,7 @@ class MainView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MainScreen([
+    return MainScreen([
       HomeView(),
       QuestionAnswerView(),
       QuranView(),

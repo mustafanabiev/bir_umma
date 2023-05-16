@@ -43,10 +43,10 @@ flutter:
     - assets/images/
     - assets/icons/
 
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Allura-Regular
+      fonts:
+        - asset: assets/fonts/Allura-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
