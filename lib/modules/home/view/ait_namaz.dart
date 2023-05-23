@@ -4,8 +4,8 @@ import 'package:share_plus/share_plus.dart';
 
 import '../../../gen/assets.gen.dart';
 
-class PageInfo extends StatelessWidget {
-  const PageInfo({
+class AitNamazPage extends StatelessWidget {
+  const AitNamazPage({
     Key? key,
     this.onPressed,
   }) : super(key: key);
@@ -131,7 +131,7 @@ class PageInfo extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Text(
-                          'Lorem ipsum',
+                          'Ait Namaz',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, fontSize: 22),
                         ),

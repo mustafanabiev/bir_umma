@@ -3,10 +3,6 @@ import 'package:bir_umma/constants/color.dart';
 import 'package:flutter/material.dart';
 
 import '../../../components/models/namaz_page_model.dart';
-
-
-
-
 class BeshUbakNamazPage extends StatelessWidget {
   const BeshUbakNamazPage({
     Key? key,
@@ -75,7 +71,7 @@ class BeshUbakNamazPage extends StatelessWidget {
                               ),
                               right: 25,
                               left: 27,
-                              // top: 80,
+                             
                               bottom: 12,
                             ),
                           ],

@@ -76,7 +76,6 @@ class UchNamazPage extends StatelessWidget {
                               ),
                               right: 25,
                               left: 27,
-                              // top: 80,
                               bottom: 12,
                             ),
                           ],
