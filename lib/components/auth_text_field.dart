@@ -3,15 +3,16 @@ import 'package:flutter/material.dart';
 class AuthTextField extends StatelessWidget {
   final String labelText;
   final bool obscureText;
-  final Icon icons;
+  final Widget prefixIcon;
   final suffixIcon;
-  const AuthTextField(
-      {Key? key,
-      required this.labelText,
-      required this.obscureText,
-      required this.icons,
-      this.suffixIcon})
-      : super(key: key);
+
+  const AuthTextField({
+    Key? key,
+    required this.labelText,
+    required this.obscureText,
+    required this.suffixIcon,
+    required this.prefixIcon,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,16 +21,19 @@ class AuthTextField extends StatelessWidget {
       child: TextField(
         obscureText: obscureText,
         decoration: InputDecoration(
-            labelText: labelText,
-            labelStyle: TextStyle(
-                color: Colors.grey[600],
-                fontWeight: FontWeight.w400,
-                fontSize: 18),
-            icon: icons,
-            hoverColor: Colors.white,
-            suffixIcon: suffixIcon
-            
-            ),
+          labelText: labelText,
+          alignLabelWithHint: true,
+          labelStyle: TextStyle(
+              color: Colors.grey[700],
+              fontWeight: FontWeight.w400,
+              fontSize: 19),
+          hoverColor: Colors.white,
+          suffixIcon: suffixIcon,
+          prefixIcon: Padding(
+            padding: const EdgeInsets.only(top: 16),
+            child: prefixIcon,
+          ),
+        ),
       ),
     );
   }

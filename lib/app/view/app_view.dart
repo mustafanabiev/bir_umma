@@ -7,7 +7,7 @@ import 'package:bir_umma/modules/zikir/logic/zikir_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../modules/authentication/view/authentication_view.dart';
+import '../../modules/authentication/view/register_view.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
             create: (context) => ProfileCubit(),
           ),
         ],
-        child: const AuthenticationView(),
+        child: const RegisterView(),
       ),
     );
   }
