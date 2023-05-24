@@ -1,5 +1,7 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:bir_umma/modules/modules.dart';
-import 'package:bir_umma/modules/profile/view/profile_view.dart';
+import 'package:bir_umma/modules/profile/profile.dart';
 import 'package:bir_umma/modules/question_answer/question_answer.dart';
 import 'package:bir_umma/modules/quran/quran.dart';
 import 'package:bir_umma/modules/zikir/view/zikir_view.dart';
