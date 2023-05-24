@@ -2,9 +2,9 @@ import 'package:bir_umma/constants/profile_constants/colors/profile_colors.dart'
 import 'package:bir_umma/modules/profile/views/profile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../components/profile_component/email_password_field.dart';
-import '../../../components/profile_component/text_button_widget.dart';
-import '../../../constants/profile_constants/text_style/app_text_style.dart';
+import '../../../../components/profile_component/email_password_field.dart';
+import '../../../../components/profile_component/text_button_widget.dart';
+import '../../../../constants/profile_constants/text_style/app_text_style.dart';
 
 class ChangeEmailPage extends StatelessWidget {
   const ChangeEmailPage({Key? key}) : super(key: key);

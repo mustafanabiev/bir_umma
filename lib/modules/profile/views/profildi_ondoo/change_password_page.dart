@@ -3,8 +3,8 @@ import 'package:bir_umma/constants/profile_constants/text_style/app_text_style.d
 import 'package:bir_umma/modules/profile/views/profile_view.dart';
 import 'package:flutter/material.dart';
 
-import '../../../components/profile_component/email_password_field.dart';
-import '../../../components/profile_component/text_button_widget.dart';
+import '../../../../components/profile_component/email_password_field.dart';
+import '../../../../components/profile_component/text_button_widget.dart';
 
 class ChangePasswordPage extends StatefulWidget {
   const ChangePasswordPage({Key? key}) : super(key: key);

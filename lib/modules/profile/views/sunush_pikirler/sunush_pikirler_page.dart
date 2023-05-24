@@ -1,8 +1,8 @@
 import 'package:bir_umma/constants/profile_constants/colors/profile_colors.dart';
 import 'package:bir_umma/modules/profile/profile.dart';
 import 'package:flutter/material.dart';
-import '../../../components/profile_component/text_button_widget.dart';
-import '../../../constants/profile_constants/text_style/app_text_style.dart';
+import '../../../../components/profile_component/text_button_widget.dart';
+import '../../../../constants/profile_constants/text_style/app_text_style.dart';
 
 class SunushPikirlerPage extends StatelessWidget {
   const SunushPikirlerPage({Key? key}) : super(key: key);

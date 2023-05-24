@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../components/profile_component/profile_info_widget.dart';
 import '../../../components/profile_component/list_tile_widget.dart';
 import '../../../constants/profile_constants/text_style/app_text_style.dart';
-import 'profildi_ondoo_page.dart';
-import 'sunush_pikirler_page.dart';
+import 'profildi_ondoo/profildi_ondoo_page.dart';
+import 'sunush_pikirler/sunush_pikirler_page.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({Key? key}) : super(key: key);

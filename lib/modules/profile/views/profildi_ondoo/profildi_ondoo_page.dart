@@ -1,8 +1,8 @@
 import 'package:bir_umma/constants/profile_constants/colors/profile_colors.dart';
 import 'package:flutter/material.dart';
 
-import '../../../components/profile_component/profile_info_widget.dart';
-import '../../../constants/profile_constants/text_style/app_text_style.dart';
+import '../../../../components/profile_component/profile_info_widget.dart';
+import '../../../../constants/profile_constants/text_style/app_text_style.dart';
 import 'change_email_page.dart';
 import 'change_password_page.dart';
 
