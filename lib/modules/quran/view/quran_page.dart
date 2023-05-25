@@ -19,7 +19,7 @@ class QuranPageState extends State<QuranPage> {
             pinned: true,
             // snap: true,
             // floating: true,
-            backgroundColor: Color.fromRGBO(3, 3, 107, 0.525),
+            backgroundColor: const Color.fromRGBO(3, 3, 107, 0.525),
             shape: const ContinuousRectangleBorder(
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(40),

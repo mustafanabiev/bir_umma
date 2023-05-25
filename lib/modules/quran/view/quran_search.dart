@@ -8,8 +8,6 @@ class KuranSearchPage extends StatefulWidget {
 }
 
 class KuranSearchPageState extends State<KuranSearchPage> {
-  bool _searchBoolean = false;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

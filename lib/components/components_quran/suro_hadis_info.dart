@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class suroHadisInfo extends StatelessWidget {
-  const suroHadisInfo({
+class SuroHadisInfo extends StatelessWidget {
+  const SuroHadisInfo({
     super.key,
   });
 
