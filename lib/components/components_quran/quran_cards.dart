@@ -3,23 +3,18 @@ import 'package:bir_umma/modules/quran/view/quran_surolor.dart';
 import 'package:flutter/material.dart';
 
 class KuranCard extends StatelessWidget {
-  const KuranCard({
+  KuranCard({
     required this.title,
+    required this.onTap,
     super.key,
   });
   final String title;
+  void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const QuranPage(),
-          ),
-        );
-      },
+      onTap: onTap,
       child: Container(
         padding: const EdgeInsets.only(
           top: 101,
