@@ -1,4 +1,4 @@
-import 'package:bir_umma/modules/authentication/authentication.dart';
+import 'package:bir_umma/modules/authentication/view/authentication_view.dart';
 import 'package:bir_umma/modules/modules.dart';
 import 'package:bir_umma/modules/profile/logic/profile_cubit.dart';
 import 'package:bir_umma/modules/question_answer/question_answer.dart';
@@ -6,8 +6,6 @@ import 'package:bir_umma/modules/quran/quran.dart';
 import 'package:bir_umma/modules/zikir/logic/zikir_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../../modules/authentication/view/register_view.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -40,7 +38,7 @@ class MyApp extends StatelessWidget {
             create: (context) => ProfileCubit(),
           ),
         ],
-        child: const RegisterView(),
+        child: const LoginView(),
       ),
     );
   }
