@@ -1,3 +1,4 @@
+import 'package:bir_umma/modules/authentication/view/authentication_view.dart';
 import 'package:bir_umma/modules/modules.dart';
 import 'package:bir_umma/modules/profile/logic/profile_cubit.dart';
 import 'package:bir_umma/modules/question_answer/question_answer.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
             create: (context) => ProfileCubit(),
           ),
         ],
-        child: const MainView(),
+        child: const LoginView(),
       ),
     );
   }
