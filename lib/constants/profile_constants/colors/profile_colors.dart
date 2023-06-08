@@ -13,4 +13,11 @@ class AppProfileColors {
   static const Color bolushuuAlertColor = Color(0xFFE7F1FF);
   static const Color appBarColor = Color(0xFF888080);
   static const Color cameraIconColor = Color(0xFF1A80D4);
+  static const Color greenColor = Color(0xFF27B24A);
+  static const Color yellowColor = Color(0xFFFFB900);
+  static const Color league1Color = Color(0xFFFFAC33);
+  static const Color league2Color = Color(0xFFCBD5DC);
+  static const Color league3Color = Color(0xFFFF8A3B);
+  static const Color usersCardColor = Color(0xFFE7F1FF);
+  static const Color userCardBorderColor = Color(0xFFC5D5E2);
 }
