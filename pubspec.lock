@@ -669,6 +669,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.1"
+  toggle_bar:
+    dependency: "direct main"
+    description:
+      name: toggle_bar
+      sha256: "0da9cdb4e6b173211eac5fc14954e0e0eb50097cf3b1441db9094e44749520d7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   typed_data:
     dependency: transitive
     description:
